@@ -28,8 +28,8 @@ sudo apt clean
 sudo apt autoclean
 sudo apt install -f
 sudo apt -y autoremove
-sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -  #添加nodejs18仓库
+sudo apt install -y curl
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -  #添加nodejs16仓库
 sudo apt-get install -y nodejs
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install -y yarn
