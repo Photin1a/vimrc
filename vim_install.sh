@@ -4,8 +4,8 @@ sudo apt -y upgrade
 
 #install python3.6
 sudo apt install -y python3.6
-sudo apt-get install libncurses5-dev
-sudo apt-get install vim-gnome
+sudo apt-get install -y libncurses5-dev
+sudo apt-get install -y vim-gnome
 
 cp .vimrc ~
 #install latest vim
