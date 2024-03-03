@@ -1,11 +1,12 @@
+#!/bin/bash
 sudo apt update
 sudo apt -y upgrade
 
 #install python3.6
 sudo apt install -y python3.6
 
+cp .vimrc ./ 
 #install latest vim
-#cd ~/Downloads
 sudo apt remove  -y --purge vim   #uninstall vim
 sudo apt install -y git
 git clone https://github.com/vim/vim.git
@@ -29,14 +30,11 @@ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -  #添加nodejs18
 sudo apt-get install -y nodejs
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install -y yarn
-echo "current npm version:`npm -version`
-echo "current nodejs version:`node -v`
+echo "current npm version:"
+npm -version
+echo "current nodejs version:"
+node -v
 
 #install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-#copy vimrc
-mkdir ~/vimrc&&cd ~
-git clone https://github.com/Photin1a/vimrc.git ./vimrc
-cp ./vimrc/.vimrc ./ && rm -rf vimrc
