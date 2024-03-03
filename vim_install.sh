@@ -29,7 +29,7 @@ sudo apt autoclean
 sudo apt install -f
 sudo apt -y autoremove
 sudo apt install -y curl
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -  #添加nodejs16仓库
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -  #添加nodejs16仓库,建议不要>16
 sudo apt-get install -y nodejs
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install -y yarn
