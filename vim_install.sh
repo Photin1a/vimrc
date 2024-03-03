@@ -5,7 +5,7 @@ sudo apt -y upgrade
 #install python3.6
 sudo apt install -y python3.6
 
-cp .vimrc ./ 
+cp .vimrc ~
 #install latest vim
 sudo apt remove  -y --purge vim   #uninstall vim
 sudo apt install -y git
