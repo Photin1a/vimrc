@@ -2,14 +2,15 @@
 sudo apt update
 sudo apt -y upgrade
 
-#install python3.6
-sudo apt install -y python3.6
-sudo apt-get install -y libncurses5-dev
-sudo apt-get install -y vim-gnome
+#install python2.7, 3.6
+sudo apt-get install -y python2.7-dev
+sudo apt-get install -y python3.6-dev
 
 cp .vimrc ~
 #install latest vim
 sudo apt remove  -y --purge vim   #uninstall vim
+sudo apt-get install -y libncurses5-dev
+sudo apt-get install -y vim-gnome
 sudo apt install -y git
 git clone https://github.com/vim/vim.git
 cd ./vim
